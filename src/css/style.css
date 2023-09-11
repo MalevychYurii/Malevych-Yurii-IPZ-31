@@ -1,0 +1,32 @@
+.wrapper {
+}
+.header {
+  &__container {
+  }
+
+  &__left-side-header {
+  }
+
+  &__logo {
+  }
+
+  &__right-side-header {
+  }
+}
+.blue-logo {
+}
+.nav {
+  &__list {
+  }
+}
+.list {
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.contact {
+  &__list {
+  }
+}
