@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    font-family: "Roboto";
+}
+
+.header {
+
+		&__container {
+		}
+
+		&__left-side-header {
+		}
+
+		&__logo {
+		}
+
+		&__right-side-header {
+		}
+}
+.blue-logo {
+    color: #2196F3;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.dark-logo {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+.nav {
+
+		&__list {
+		}
+}
+.list {
+    color: #212121;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+		&__item {
+		}
+
+		&__link:hover { /* не міняється */
+            color: #2196F3;
+		}
+        
+		&__link:focus {
+            color: #2196F3;
+		}
+}
+.contact {
+
+		&__list {
+		}
+}
+
+.main {
+}
+.solution-for-business {
+
+    text-align: center;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 162.5%;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background-color: #2F303A;;
+    color: white;
+    
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__button { /* не краситься */
+        }
+}
+.about {
+
+		&__container {
+		}
+}
+.article-card {
+
+		&__item {
+		}
+
+		&__title { /* не працює */
+            color: #212121;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+		}
+
+		&__subtitle {
+		}
+}
