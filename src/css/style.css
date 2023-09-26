@@ -76,7 +76,17 @@ li {
 		}
 }
 
-.main {
+.main button {
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
 }
 .solution-for-business {
 
@@ -96,20 +106,23 @@ li {
 		&__title {
 		}
 
-		&__button { /* не краситься */
+        &__button {
+            background: #2196F3;
         }
 }
+
 .about {
 
 		&__container {
 		}
 }
-.article-card {
-
+.article-card h3{
+    text-transform: uppercase;
 		&__item {
+            
 		}
 
-		&__title { /* не працює */
+		&__title { 
             color: #212121;
             font-family: Roboto;
             font-size: 14px;
