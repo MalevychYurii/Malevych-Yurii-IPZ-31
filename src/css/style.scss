@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
+body {
+    font-family: "Roboto";
+}
+
+.header {
+    
+    &__container {
+    }
+
+    &__left-side-header {
+    }
+
+    &__logo {
+    }
+
+    &__right-side-header {
+    }
+}
+
+.blue-logo {
+    color: #2196F3;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+.dark-logo {
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+}
+
+.nav {
+
+    &__list {
+    }
+
+
+    .list {
+
+        &__item {
+        }
+
+        &__link {
+            color: #212121;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+            &:hover {
+                color: #2196F3;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.28px;
+            }
+        }
+    }
+}
+
+.contact {
+
+    &__list {
+        
+    }
+}
+
+.list {
+
+    &__item {
+        
+    }
+
+    &__link {
+        color: #757575;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        &:hover {
+            color: #2196F3;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+    }
+}
+
+.main {
+}
+
+.solution-for-business {
+    background: #2F303A;
+    &__container {
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 60px; /* 136.364% */
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.96px;
+    }
+}
+.about {
+
+    &__container {
+    }
+}
+.article-card {
+
+    &__item {
+    }
+
+    &__title {
+        color: #212121;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+    }
+}
