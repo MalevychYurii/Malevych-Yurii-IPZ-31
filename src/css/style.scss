@@ -3,6 +3,9 @@
 
 body {
     font-family: "Roboto";
+    font-style: normal; 
+    line-height: normal; 
+    font-weight: 400;
 }
 
 .header {
@@ -23,18 +26,12 @@ body {
 .blue-logo {
     color: #2196F3;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
 .dark-logo {
     color: #000;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -52,16 +49,10 @@ body {
         &__link {
             color: #212121;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
             letter-spacing: 0.28px;
             &:hover {
                 color: #2196F3;
                 font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
                 letter-spacing: 0.28px;
             }
         }
@@ -84,16 +75,11 @@ body {
     &__link {
         color: #757575;
         font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
         letter-spacing: 0.28px;
-        &:hover {
+        transition: all 0.3s ease;
+        &:hover,:focus {
             color: #2196F3;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
             letter-spacing: 0.28px;
         }
     }
@@ -111,8 +97,7 @@ body {
         color: #FFF;
         text-align: center;
         font-size: 44px;
-        font-style: normal;
-        font-weight: 900;
+        font-weight: 700;
         line-height: 60px; /* 136.364% */
         letter-spacing: 2.64px;
         text-transform: uppercase;
@@ -124,9 +109,8 @@ body {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: #FFF;
         text-align: center;
-        font-size: 16px;
-        font-style: normal;
         font-weight: 700;
+        font-size: 16px;
         line-height: 30px; /* 187.5% */
         letter-spacing: 0.96px;
     }
@@ -144,9 +128,7 @@ body {
     &__title {
         color: #212121;
         font-size: 14px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
     }
@@ -155,12 +137,118 @@ body {
     }
 }
 
+.what-we-do {
+
+    &__title {
+        color: #212121;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+    }
+
+    &__lower-images {
+    }
+
+    &__item {
+    }
+}
+.section {
+
+    &_what-we-do {
+    }
+}
+
+.our-team {
+    background: #F5F4FA;
+    color: #212121;
+    /*text-align: center;*/
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    &__lower {
+    }
+
+    &__item {
+        border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+        /* material shadow v1 */
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    }
+
+    &__image {
+    }
+
+    &__name {
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        
+    }
+
+    &__job {
+        color: #757575;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+    }
+}
+
+.main {
+
+    &__button {
+        border-radius: 4px;
+        background: #F5F4FA;
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: 0.48px;
+        transition: all 0.3s ease;
+        &:hover {
+            border-radius: 4px;
+            background: #2196F3;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px; /* 162.5% */
+            letter-spacing: 0.48px;
+            /* shadow-middle */
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+}
+.on {
+
+    &__focus:focus {
+        border-radius: 4px;
+        background: #2196F3;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: 0.48px;
+        /* shadow-middle */
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+
 .filling {
 
     &__list {
     }
 
     &__item {
+        border: 1px solid #EEE;
+        background: #FFF;
     }
 
     &__link {
@@ -172,7 +260,6 @@ body {
     &__title {
         color: #212121;
         font-size: 18px;
-        font-style: normal;
         font-weight: 700;
         line-height: 36px; /* 200% */
         letter-spacing: 1.08px;
@@ -181,8 +268,6 @@ body {
     &__subtitle {
         color: #757575;
         font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 30px; /* 187.5% */
         letter-spacing: 0.48px;
     }
@@ -191,6 +276,7 @@ body {
 .footer {
 
     &__container {
+        background: #2F303A;
     }
 
     &__box {
@@ -206,9 +292,6 @@ body {
 .white-logo {
     color: #FFF;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -220,8 +303,14 @@ body {
 .list {
 
     &__item {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px; /* 114.286% */
+        letter-spacing: 0.42px;
     }
 
     &__link {
     }
 }
+
