@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    line-height: normal; 
+    font-weight: 400;
+}
+
+.header {
+    
+    &__container {
+    }
+
+    &__left-side-header {
+    }
+
+    &__logo {
+    }
+
+    &__right-side-header {
+    }
+}
+
+.blue-logo {
+    color: #2196F3;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.78px;
+}
+
+.dark-logo {
+    color: #212121;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.78px;
+}
+
+.nav {
+
+    &__list {
+    }
+
+
+    .list {
+
+        &__item {
+        }
+
+        &__link {
+            color: #212121;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.28px;
+            &:hover {
+                color: #2196F3;
+                font-size: 14px;
+                letter-spacing: 0.28px;
+            }
+        }
+
+        .active {
+            color: #2196F3;
+        }
+    }
+}
+
+.contact {
+
+    &__list {
+       font-weight: 500;
+    }
+}
+
+.list {
+
+    &__item {
+        
+    }
+
+    &__link {
+        color: #757575;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        transition: all 0.3s ease;
+        &:hover,:focus {
+            color: #2196F3;
+            font-size: 14px;
+            letter-spacing: 0.28px;
+        }
+    }
+}
+
+.main {
+}
+
+.solution-for-business {
+    background: #2F303A;
+    &__container {
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 60px; /* 136.364% */
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.96px;
+    }
+}
+.about {
+
+    &__container {
+    }
+}
+.article-card {
+
+    &__item {
+    }
+
+    &__title {
+        color: #212121;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        color: #757575;
+        font-size: 14px;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.42px;
+    }
+}
+
+.what-we-do {
+
+    &__title {
+        color: #212121;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+    }
+
+    &__lower-images {
+    }
+
+    &__item {
+    }
+}
+.section {
+
+    &_what-we-do {
+    }
+}
+
+.our-team {
+    background: #F5F4FA;
+    color: #212121;
+    /*text-align: center;*/
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    &__lower {
+    }
+
+    &__item {
+        border-radius: 0px 0px 4px 4px;
+        background: #FFF;
+        /* material shadow v1 */
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    }
+
+    &__image {
+    }
+
+    &__name {
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        
+    }
+
+    &__job {
+        color: #757575;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+    }
+}
+
+.main {
+
+    &__button {
+        border-radius: 4px;
+        font-family: "Roboto", sans-serif;
+        background: #F5F4FA;
+        color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: 0.48px;
+        transition: all 0.3s ease;
+        &:hover {
+            border-radius: 4px;
+            background: #2196F3;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px; /* 162.5% */
+            letter-spacing: 0.48px;
+            /* shadow-middle */
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+}
+.on {
+
+    &__focus:focus {
+        border-radius: 4px;
+        background: #2196F3;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: 0.48px;
+        /* shadow-middle */
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+}
+
+
+.filling {
+
+    &__list {
+    }
+
+    &__item {
+        border: 1px solid #EEE;
+        background: #FFF;
+    }
+
+    &__link {
+    }
+
+    &__img {
+    }
+
+    &__title {
+        color: #212121;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px; /* 200% */
+        letter-spacing: 1.08px;
+    }
+
+    &__subtitle {
+        color: #757575;
+        font-size: 16px;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.48px;
+    }
+}
+
+.footer {
+
+    &__container {
+        background: #2F303A;
+    }
+
+    &__box {
+    }
+
+    &__logo {
+    }
+    .contact {
+
+		&__list {
+		}
+}
+
+
+.white-logo {
+    color: #FFF;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.78px;
+}
+
+.contact {
+
+    &__list {
+    }
+}
+.list {
+
+    &_disabled {
+        color: #FFF;
+    }
+
+    &__item {
+        color: #FFF;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 16px; /* 114.286% */
+        letter-spacing: 0.42px;
+    }
+
+    &__link {
+    }
+}
+}
