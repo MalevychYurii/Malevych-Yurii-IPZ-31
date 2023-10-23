@@ -1,10 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+.container, .what-we-do, .article-card, .header {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 5px;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: normal;
   font-weight: 400;
+}
+
+.header {
+  padding: 24px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 93px;
+}
+.header__left-side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 93px;
+}
+.header__right-side-header .contact__list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 .blue-logo {
@@ -21,6 +50,12 @@ body {
   letter-spacing: 0.78px;
 }
 
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
 .nav .list__link {
   color: #212121;
   font-size: 14px;
@@ -34,10 +69,6 @@ body {
 }
 .nav .list .active {
   color: #2196F3;
-}
-
-.contact__list {
-  font-weight: 500;
 }
 
 .list__link {
@@ -54,6 +85,18 @@ body {
 
 .solution-for-business {
   background: #2F303A;
+  position: relative;
+  padding: 200px 0px;
+  z-index: 0;
+}
+.solution-for-business__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 5;
 }
 .solution-for-business__title {
   color: #FFF;
@@ -77,6 +120,13 @@ body {
   letter-spacing: 0.96px;
 }
 
+.article-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 94px;
+  gap: 30px;
+}
 .article-card__title {
   color: #212121;
   font-size: 14px;
@@ -97,14 +147,35 @@ body {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
+.what-we-do__lower-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  z-index: 1;
+}
+.what-we-do__item {
+  padding-bottom: 94px;
+}
+
 .our-team {
   background: #F5F4FA;
   color: #212121;
-  /*text-align: center;*/
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.08px;
+  padding-top: 10px;
+}
+.our-team__lower {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 94px;
 }
 .our-team__item {
   border-radius: 0px 0px 4px 4px;

@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
 
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+	padding: 0 5px;
+	width: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal; 
@@ -9,17 +16,36 @@ body {
 }
 
 .header {
+    @extend.container;
+    padding: 24px 0;
     
     &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 93px;
     }
 
     &__left-side-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 93px;
     }
 
     &__logo {
     }
 
-    &__right-side-header {
+    &__right-side-header {  
+
+        .contact {
+        
+                &__list {
+                    display: flex;
+                    justify-content: space-between;
+                    column-gap: 40px;
+                }
+        }
     }
 }
 
@@ -40,12 +66,16 @@ body {
 .nav {
 
     &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
     }
 
 
     .list {
 
         &__item {
+            
         }
 
         &__link {
@@ -69,14 +99,14 @@ body {
 .contact {
 
     &__list {
-       font-weight: 500;
+        
     }
 }
 
 .list {
 
     &__item {
-        
+
     }
 
     &__link {
@@ -97,7 +127,17 @@ body {
 
 .solution-for-business {
     background: #2F303A;
+    position: relative;
+    padding: 200px 0px;
+    z-index: 0;
     &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 5;
     }
 
     &__title {
@@ -129,7 +169,12 @@ body {
     }
 }
 .article-card {
-
+    @extend.container;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 94px;
+    gap: 30px;
     &__item {
     }
 
@@ -150,19 +195,28 @@ body {
 }
 
 .what-we-do {
-
+    @extend.container;
+    
     &__title {
         color: #212121;
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         letter-spacing: 1.08px;
+        margin-bottom: 50px;
     }
 
     &__lower-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 1;
     }
 
     &__item {
+        padding-bottom: 94px;
     }
 }
 .section {
@@ -174,11 +228,17 @@ body {
 .our-team {
     background: #F5F4FA;
     color: #212121;
-    /*text-align: center;*/
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    padding-top: 10px;
     &__lower {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-top: 94px;
     }
 
     &__item {
