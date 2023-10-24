@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-
 .container {
     max-width: 1200px;
     margin: 0px auto;
@@ -273,15 +272,16 @@ body {
 .main {
 
     &__button {
-        border-radius: 4px;
-        font-family: "Roboto", sans-serif;
         background: #F5F4FA;
         color: #212121;
         text-align: center;
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-weight: 500;
-        line-height: 26px; /* 162.5% */
-        letter-spacing: 0.48px;
+        line-height: 162.5%;
+        letter-spacing: 0.48px;    
+        border-radius: 4px;
+        padding: 6px 22px;
         transition: all 0.3s ease;
         &:hover {
             border-radius: 4px;
@@ -314,35 +314,87 @@ body {
 }
 
 
-.filling {
+.main {
+    @extend.container;
+    &_filter {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding-bottom: 50px;
+    }
 
+    &__container {
+        
+    }
+
+    &__filling {
+        
+    }
+
+    &__button {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 162.5%;
+        letter-spacing: 0.48px;
+        border-radius: 4px;
+        padding: 6px 22px;
+        background-color: #F5F4FA;
+        color: #212121;
+        transition: all 0.3s ease;
+        &:hover{
+            border-radius: 4px;
+            background: #2196F3;        
+            /* shadow-middle */
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        }
+    }
+}
+.filter {
+}
+.filling {
+    @extend.container;
     &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__item {
         border: 1px solid #EEE;
-        background: #FFF;
+        max-width: 370px;
     }
 
     &__link {
+        display: inline-block;
     }
 
     &__img {
     }
 
     &__title {
-        color: #212121;
         font-size: 18px;
         font-weight: 700;
-        line-height: 36px; /* 200% */
+        line-height: 200%;
         letter-spacing: 1.08px;
+        color: #212121;
+        padding: 24px;
     }
 
     &__subtitle {
-        color: #757575;
         font-size: 16px;
-        line-height: 30px; /* 187.5% */
+        font-weight: 400;
+        line-height: 187.5%;
         letter-spacing: 0.48px;
+        color: #757575;
+        padding: 24px;
+    }
+}
+.on {
+
+    &__focus {
     }
 }
 
