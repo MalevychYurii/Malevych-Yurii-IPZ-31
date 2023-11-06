@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-.container, .filling, .what-we-do, .article-card, .header {
+.container, .filling, .our-team__lower, .what-we-do, .about-card, .header__container {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0 5px;
@@ -15,10 +15,15 @@ body {
   margin: 0px;
 }
 
+section {
+  padding-top: 74px;
+  padding-bottom: 74px;
+}
+
 .header {
-  padding: 14.4px 15px 14.4px 15px;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border: 1px solid #d3d3d3;
 }
 .header__container {
   display: flex;
@@ -61,13 +66,22 @@ body {
   color: #2196F3;
 }
 
+.contact__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.list__item {
+  padding-left: 40px;
+}
 .list__link {
   color: #757575;
   font-size: 14px;
   letter-spacing: 0.28px;
   transition: all 0.3s ease;
 }
-.list__link:hover, .list__link :focus {
+.list__link:hover,
+.list__link :focus {
   color: #2196F3;
   font-size: 14px;
   letter-spacing: 0.28px;
@@ -93,7 +107,8 @@ body {
   text-align: center;
   font-size: 44px;
   font-weight: 700;
-  line-height: 60px; /* 136.364% */
+  line-height: 60px;
+  /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
@@ -106,30 +121,34 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
+  /* 187.5% */
   letter-spacing: 0.96px;
   margin: 0 auto;
   display: block;
 }
 
-.article-card {
+.about-card {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 94px;
   gap: 30px;
 }
-.article-card__title {
+.about-card__item {
+  max-width: 270px;
+}
+.about-card__title {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.article-card__subtitle {
+.about-card__subtitle {
   color: #757575;
   font-size: 14px;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
   letter-spacing: 0.42px;
 }
 
@@ -163,10 +182,8 @@ body {
 }
 .our-team__lower {
   display: flex;
-  justify-content: space-evenly;
   gap: 30px;
   flex-wrap: wrap;
-  padding-top: 94px;
 }
 .our-team__item {
   border-radius: 0px 0px 4px 4px;
@@ -174,13 +191,18 @@ body {
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+.our-team__cont {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .our-team__name {
   color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  padding: 30px 0px 10px 0px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .our-team__job {
   color: #757575;
@@ -211,7 +233,8 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   letter-spacing: 0.48px;
   /* shadow-middle */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -224,33 +247,30 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   letter-spacing: 0.48px;
   /* shadow-middle */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.main {
-  width: 100%;
-}
-.main_filter {
+.main_buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .main__button {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  padding: 6px 22px 6px 22px;
   font-size: 16px;
+  font-family: "Roboto";
   font-weight: 500;
-  line-height: 162.5%;
-  letter-spacing: 0.48px;
-  border-radius: 4px;
-  padding: 6px 22px;
-  background-color: #F5F4FA;
+  line-height: 1.6em;
   color: #212121;
-  transition: all 0.3s ease;
+  text-align: center;
+  letter-spacing: 0.48px;
 }
 .main__button:hover {
   border-radius: 4px;
@@ -287,9 +307,12 @@ body {
   letter-spacing: 0.48px;
   color: #757575;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2F303A;
   padding: 60px 0px 60px 215px;
   width: 100%;

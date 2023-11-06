@@ -1,36 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
 .container {
     max-width: 1200px;
     margin: 0px auto;
-	padding: 0 5px;
-	width: 100%;
+    padding: 0 5px;
+    width: 100%;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-style: normal; 
-    line-height: normal; 
+    font-style: normal;
+    line-height: normal;
     font-weight: 400;
     margin: 0px
 }
 
+section {
+    padding-top: 74px;
+    padding-bottom: 74px;
+}
+
 .header {
-    @extend.container;
-    padding: 14.4px 15px 14.4px 15px;
-    display: flex;
-    justify-content: space-between;
-    
+    padding-top: 25px;
+    padding-bottom: 24px;
+    border: 1px solid #d3d3d3;
 
     &__container {
+        @extend.container;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 93px;
     }
 
-    &__logo {
-    }
+    &__logo {}
 }
 
 .blue-logo {
@@ -57,14 +61,14 @@ body {
 
 
     .list {
-        &__item { 
-        }
+        &__item {}
 
         &__link {
             color: #212121;
             font-size: 14px;
             font-weight: 500;
             letter-spacing: 0.28px;
+
             &:hover {
                 color: #2196F3;
                 font-size: 14px;
@@ -79,15 +83,17 @@ body {
 }
 
 .contact {
-    
-    &__list { 
+
+    &__list {
+        display: flex;
+        margin-left: auto;
     }
 }
 
 .list {
 
     &__item {
-
+        padding-left: 40px;
     }
 
     &__link {
@@ -95,7 +101,9 @@ body {
         font-size: 14px;
         letter-spacing: 0.28px;
         transition: all 0.3s ease;
-        &:hover,:focus {
+
+        &:hover,
+        :focus {
             color: #2196F3;
             font-size: 14px;
             letter-spacing: 0.28px;
@@ -103,14 +111,14 @@ body {
     }
 }
 
-.main {
-}
+.main {}
 
 .solution-for-business {
     background: #2F303A;
     position: relative;
     padding: 200px 0px;
     z-index: 0;
+
     &__container {
         position: relative;
         display: flex;
@@ -126,7 +134,8 @@ body {
         text-align: center;
         font-size: 44px;
         font-weight: 700;
-        line-height: 60px; /* 136.364% */
+        line-height: 60px;
+        /* 136.364% */
         letter-spacing: 2.64px;
         text-transform: uppercase;
     }
@@ -140,25 +149,28 @@ body {
         text-align: center;
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px; /* 187.5% */
+        line-height: 30px;
+        /* 187.5% */
         letter-spacing: 0.96px;
         margin: 0 auto;
         display: block;
     }
 }
+
 .about {
 
-    &__container {
-    }
+    &__container {}
 }
-.article-card {
+
+.about-card {
     @extend.container;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding-top: 94px;
     gap: 30px;
+
     &__item {
+        max-width: 270px;
     }
 
     &__title {
@@ -172,7 +184,8 @@ body {
     &__subtitle {
         color: #757575;
         font-size: 14px;
-        line-height: 24px; /* 171.429% */
+        line-height: 24px;
+        /* 171.429% */
         letter-spacing: 0.42px;
     }
 }
@@ -180,6 +193,7 @@ body {
 .what-we-do {
     @extend.container;
     padding-bottom: 94px;
+
     &__title {
         color: #212121;
         text-align: center;
@@ -198,14 +212,12 @@ body {
         z-index: 1;
     }
 
-    &__item {
-        
-    }
+    &__item {}
 }
+
 .section {
 
-    &_what-we-do {
-    }
+    &_what-we-do {}
 }
 
 .our-team {
@@ -216,12 +228,12 @@ body {
     font-weight: 700;
     letter-spacing: 1.08px;
     padding-bottom: 94px;
+
     &__lower {
+        @extend.container;
         display: flex;
-        justify-content: space-evenly;
         gap: 30px;
         flex-wrap: wrap;
-        padding-top: 94px;
     }
 
     &__item {
@@ -229,10 +241,13 @@ body {
         background: #FFF;
         /* material shadow v1 */
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
     }
 
-    &__image {
+    &__image {}
+
+    &__cont {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     &__name {
@@ -241,7 +256,8 @@ body {
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.48px;
-        padding: 30px 0px 10px 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     &__job {
@@ -264,10 +280,11 @@ body {
         font-size: 16px;
         font-weight: 500;
         line-height: 162.5%;
-        letter-spacing: 0.48px;    
+        letter-spacing: 0.48px;
         border-radius: 4px;
         padding: 6px 22px;
         transition: all 0.3s ease;
+
         &:hover {
             border-radius: 4px;
             background: #2196F3;
@@ -275,13 +292,15 @@ body {
             text-align: center;
             font-size: 16px;
             font-weight: 500;
-            line-height: 26px; /* 162.5% */
+            line-height: 26px;
+            /* 162.5% */
             letter-spacing: 0.48px;
             /* shadow-middle */
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         }
     }
 }
+
 .on {
 
     &__focus:focus {
@@ -291,7 +310,8 @@ body {
         text-align: center;
         font-size: 16px;
         font-weight: 500;
-        line-height: 26px; /* 162.5% */
+        line-height: 26px;
+        /* 162.5% */
         letter-spacing: 0.48px;
         /* shadow-middle */
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
@@ -300,46 +320,46 @@ body {
 
 
 .main {
-    width: 100%;
-    &_filter {
+
+    &_buttons {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 8px;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
-    &__container {
-        
-    }
+    &_filter {}
 
-    &__filling {
-        
-    }
+    &__container {}
+
+    &__filling {}
 
     &__button {
-        text-align: center;
-        font-family: "Roboto", sans-serif;
+        padding: 6px 22px 6px 22px;
         font-size: 16px;
+        font-family: "Roboto";
         font-weight: 500;
-        line-height: 162.5%;
-        letter-spacing: 0.48px;
-        border-radius: 4px;
-        padding: 6px 22px;
-        background-color: #F5F4FA;
+        line-height: 1.6em;
         color: #212121;
-        transition: all 0.3s ease;
-        &:hover{
+        text-align: center;
+        letter-spacing: 0.48px;
+
+        &:hover {
             border-radius: 4px;
-            background: #2196F3;        
+            background: #2196F3;
             /* shadow-middle */
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         }
     }
 }
-.filter {
-}
+
+.filter {}
+
 .filling {
     @extend.container;
+
     &__list {
         display: flex;
         justify-content: center;
@@ -356,8 +376,7 @@ body {
         display: inline-block;
     }
 
-    &__img {
-    }
+    &__img {}
 
     &__title {
         font-size: 18px;
@@ -375,67 +394,69 @@ body {
         letter-spacing: 0.48px;
         color: #757575;
         padding-left: 24px;
+        padding-bottom: 20px;
     }
 }
+
 .on {
 
-    &__focus {
-    }
+    &__focus {}
 }
 
 .footer {
 
     &__container {
+        padding-top: 60px;
+        padding-bottom: 60px;
         background: #2F303A;
         padding: 60px 0px 60px 215px;
         width: 100%;
     }
 
-    &__box {
-    }
+    &__box {}
 
     &__logo {
         display: inline-block;
         margin-bottom: 28px;
     }
+
     .contact {
         display: flex;
         flex-direction: column;
-		&__list {
+
+        &__list {
             font-style: normal;
-		}
-}
-
-
-.white-logo {
-    color: #FFF;
-    font-size: 26px;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 0.78px;
-}
-
-.contact {
-
-    &__list {
-        
+        }
     }
-}
-.footer_list {
-    
-    &_disabled {
+
+
+    .white-logo {
         color: #FFF;
+        font-size: 26px;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 0.78px;
     }
 
-    &__item {
-        transition: color 0.3s ease;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.14em;
-        color: #FFF;
-        letter-spacing: 0.42px;
+    .contact {
+
+        &__list {}
     }
 
-    &__link {
+    .footer_list {
+
+        &_disabled {
+            color: #FFF;
+        }
+
+        &__item {
+            transition: color 0.3s ease;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.14em;
+            color: #FFF;
+            letter-spacing: 0.42px;
+        }
+
+        &__link {}
     }
-}
 }
