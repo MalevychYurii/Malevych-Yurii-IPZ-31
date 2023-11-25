@@ -13,45 +13,41 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="header__left-side-header">
-                    <a href="" class="header__logo">
-                        <span class="blue-logo">Web</span><span class="dark-logo">Studio</span>
-                    </a>
-                    <nav class="nav">
-                        <ul class="nav__list list">
-                            <li class="list__item">
-                                <a href="./index.html" class="list__link">Студія</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="./portfolio.html" class="list__link active">Портфоліо</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="" class="list__link">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__right-side-header">
-                    <ul class="contact__list list">
+                <a href="./index.html" class="header__logo">
+                    <span class="blue-logo">Web</span><span class="dark-logo">Studio</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list list">
                         <li class="list__item">
-                            <a href="mailto:info@devstudio.com" class="list__link">
-                                info@devstudio.com
-                            </a>
+                            <a href="./index.html" class="list__link">Студія</a>
                         </li>
                         <li class="list__item">
-                            <a href="tel:+380961111111" class="list__link">
-                                +38 096 111 11 11
-                            </a>
+                            <a href="./portfolio.html" class="list__link active">Портфоліо</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="" class="list__link">Контакти</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
+                <ul class="contact__list list">
+                    <li class="list__item">
+                        <a href="mailto:info@devstudio.com" class="list__link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a href="tel:+380961111111" class="list__link">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
         <main class="main">
-            <div class="main__container">
-                <div class="main_filter filter">
-                    <section class="main__filling filling">
-                        <ul>
+            <section class="main__container">
+                <div class="container">
+                    <div class="main_filter">
+                        <ul class="main_buttons">
                             <li><button type="button" class="main__button on__focus" autofocus>Усі</button></li>
                             <li><button type="button" class="main__button">Веб-сайти</button></li>
                             <li><button type="button" class="main__button">Додатки</button></li>
@@ -62,80 +58,98 @@
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling1.jpg" alt="laptop_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Технокряк</h3>
-                                <p class="filling__subtitle">Веб-сайт</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Технокряк</h3>
+                                    <p class="filling__subtitle">Веб-сайт</p>
+                                </div>
                             </li>
 
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling2.jpg" alt="basketball_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Постер New Orlean vs Golden Star</h3>
-                                <p class="filling__subtitle">Дизайн</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="filling__subtitle">Дизайн</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling3.jpg" alt="seafood_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Ресторан Seafood</h3>
-                                <p class="filling__subtitle">Додаток</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Ресторан Seafood</h3>
+                                    <p class="filling__subtitle">Додаток</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling4.jpg" alt="headphones_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Проєкт Prime</h3>
-                                <p class="filling__subtitle">Маркетинг</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Проєкт Prime</h3>
+                                    <p class="filling__subtitle">Маркетинг</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling5.jpg" alt="boxed_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Проєкт Boxes</h3>
-                                <p class="filling__subtitle">Додаток</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Проєкт Boxes</h3>
+                                    <p class="filling__subtitle">Додаток</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling6.jpg" alt="screen_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Inspiration has no Borders</h3>
-                                <p class="filling__subtitle">Веб-сайт</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Inspiration has no Borders</h3>
+                                    <p class="filling__subtitle">Веб-сайт</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling7.jpg" alt="journal_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Видання Limited Edition</h3>
-                                <p class="filling__subtitle">Дизайн</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Видання Limited Edition</h3>
+                                    <p class="filling__subtitle">Дизайн</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling8.jpg" alt="tag_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Технокряк</h3>
-                                <p class="filling__subtitle">Веб-сайт</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Технокряк</h3>
+                                    <p class="filling__subtitle">Веб-сайт</p>
+                                </div>
                             </li>
                             <li class="filling__item">
                                 <a href="#" class="filling__link">
                                     <img src="./src/images/filling/filling9.jpg" alt="growing_filling_img"
-                                        class="filling__img" width="270">
+                                        class="filling__img" width="370">
                                 </a>
-                                <h3 class="filling__title">Технокряк</h3>
-                                <p class="filling__subtitle">Веб-сайт</p>
+                                <div class="filling_box">
+                                    <h3 class="filling__title">Технокряк</h3>
+                                    <p class="filling__subtitle">Веб-сайт</p>
+                                </div>
                             </li>
                         </ul>
-                    </section>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">
@@ -145,18 +159,18 @@
                     </a>
                     <div class="footer__contact contact">
                         <address>
-                            <ul class="contact__list list">
-                                <li class="list__item">
+                            <ul class="footer_contact__list list">
+                                <li class="footer_list__item">
                                     <p><a rel="nofollow" href="https://maps.app.goo.gl/WaeDtAUqTpNRBQB36"
-                                            class="list_disabled">м. Київ, пр-т
+                                            class="footer_list_disabled">м. Київ, пр-т
                                             Лесі Українки, 26</a></p>
                                 </li>
-                                <li class="list__item">
+                                <li class="footer_list__item">
                                     <a href="mailto:info@devstudio.com" class="list__link">
                                         info@devstudio.com
                                     </a>
                                 </li>
-                                <li class="list__item">
+                                <li class="footer_list__item">
                                     <a href="tel:+380961111111" class="list__link">
                                         +38 096 111 11 11
                                     </a>
