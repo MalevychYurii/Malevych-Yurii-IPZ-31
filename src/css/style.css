@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-.container, .filling, .our-team__lower, .what-we-do, .about-card, .header__container {
+.container, .footer__box, .filling, .what-we-do, .about-card, .header__container {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 0 5px;
-  width: 100%;
+  padding: 0 15px;
 }
 
 body {
@@ -16,8 +15,8 @@ body {
 }
 
 section {
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .header {
@@ -111,6 +110,10 @@ section {
   /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 .solution-for-business__button {
   border-radius: 4px;
@@ -126,6 +129,7 @@ section {
   letter-spacing: 0.96px;
   margin: 0 auto;
   display: block;
+  padding: 10px 24px;
 }
 
 .about-card {
@@ -143,6 +147,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-card__subtitle {
   color: #757575;
@@ -174,16 +179,21 @@ section {
 .our-team {
   background: #F5F4FA;
   color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  padding-bottom: 94px;
+}
+.our-team .our_team__container {
+  padding: 30px;
 }
 .our-team__lower {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+.our-team__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 .our-team__item {
   border-radius: 0px 0px 4px 4px;
@@ -191,18 +201,13 @@ section {
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.our-team__cont {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .our-team__name {
   color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .our-team__job {
   color: #757575;
@@ -210,7 +215,6 @@ section {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.48px;
-  padding-bottom: 30px;
 }
 
 .main__button {
@@ -238,6 +242,7 @@ section {
   letter-spacing: 0.48px;
   /* shadow-middle */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .on__focus:focus {
@@ -285,6 +290,9 @@ section {
   flex-wrap: wrap;
   gap: 30px;
 }
+.filling_box {
+  padding: 20px 24px;
+}
 .filling__item {
   border: 1px solid #EEE;
   max-width: 370px;
@@ -298,7 +306,7 @@ section {
   line-height: 200%;
   letter-spacing: 1.08px;
   color: #212121;
-  padding: 24px;
+  margin-bottom: 4px;
 }
 .filling__subtitle {
   font-size: 16px;
@@ -306,16 +314,12 @@ section {
   line-height: 187.5%;
   letter-spacing: 0.48px;
   color: #757575;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2F303A;
-  padding: 60px 0px 60px 215px;
-  width: 100%;
 }
 .footer__logo {
   display: inline-block;
@@ -337,11 +341,12 @@ section {
 .footer .footer_list_disabled {
   color: #FFF;
 }
-.footer .footer_list__item {
+.footer .footer_list__item:not(:last-child) {
   transition: color 0.3s ease;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14em;
   color: #FFF;
   letter-spacing: 0.42px;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=style.css.map */
