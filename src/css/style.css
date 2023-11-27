@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-.container, .footer__box, .filling, .section-clients, .what-we-do, .about-card, .header__container {
+.container, .filling, .section-clients, .what-we-do, .about-card, .header__container {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0 15px;
@@ -27,9 +27,11 @@ section {
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 93px;
 }
+.header__logo {
+  margin-right: 93px;
+}
+
 .blue-logo {
   color: #2196F3;
   font-size: 26px;
@@ -68,19 +70,25 @@ section {
 .contact__list {
   display: flex;
   margin-left: auto;
+  gap: 60px;
 }
 
-.list__item {
-  padding-left: 40px;
-}
-.list__link {
+.header-list .header-list__link {
   color: #757575;
+  transition: all 0.3s ease;
+}
+.header-list .header-list__link:hover,
+.header-list .header-list__link :focus {
+  color: #2196F3;
+}
+.header-list__link {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   letter-spacing: 0.28px;
   transition: all 0.3s ease;
 }
-.list__link:hover,
-.list__link :focus {
+.header-list__link:hover,
+.header-list__link :focus {
   color: #2196F3;
   font-size: 14px;
   letter-spacing: 0.28px;
@@ -385,10 +393,18 @@ section {
   color: #757575;
 }
 
-.footer__container {
+.footer {
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2F303A;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  gap: 94px;
+}
+.footer__box {
+  margin-left: 174px;
 }
 .footer__logo {
   display: inline-block;
@@ -398,8 +414,19 @@ section {
   display: flex;
   flex-direction: column;
 }
-.footer .contact__list {
+.footer .contact__header-list {
+  color: #757575;
   font-style: normal;
+}
+.footer .list__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 114.286% */
+  letter-spacing: 0.42px;
 }
 .footer .white-logo {
   color: #FFF;
