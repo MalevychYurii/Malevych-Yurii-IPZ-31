@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-.container, .footer__box, .filling, .what-we-do, .about-card, .header__container {
+.container, .footer__box, .filling, .section-clients, .what-we-do, .about-card, .header__container {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0 15px;
@@ -91,6 +91,7 @@ section {
   position: relative;
   padding: 200px 0px;
   z-index: 0;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/src/images/background_solution.jpg);
 }
 .solution-for-business__container {
   position: relative;
@@ -156,6 +157,18 @@ section {
   /* 171.429% */
   letter-spacing: 0.42px;
 }
+.about-card__phbox {
+  background: #F5F4FA;
+  display: inline-block;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  padding: 25px 100px;
+}
+.about-card__photo {
+  width: 70px;
+  height: 70px;
+}
 
 .what-we-do {
   padding-bottom: 94px;
@@ -215,6 +228,62 @@ section {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.48px;
+}
+.our-team__card-link {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.our-team__card-link-picture {
+  width: 44px;
+  height: 44px;
+  transition: 300ms;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 12px 12px;
+  transition: color 0, 3s ease;
+  fill: #afb1b8;
+}
+.our-team .card-link-button {
+  width: 20px;
+  height: 20px;
+}
+
+.section-clients__clients-title {
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+  font-weight: 700;
+  word-wrap: break-word;
+  color: #212121;
+}
+.section-clients__clients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-clients__clients-list-item {
+  width: 170px;
+  height: 92px;
+}
+.section-clients__clients-action {
+  display: flex;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #AFB1B8;
+  transition: border-color 0.3s;
+}
+.section-clients__clients-svg {
+  width: 106px;
+  height: 60px;
+  transition: fill 0.3s ease;
+  position: relative;
 }
 
 .main__button {
@@ -349,4 +418,39 @@ section {
   color: #FFF;
   letter-spacing: 0.42px;
   margin-bottom: 12px;
+}
+.footer .contact-social {
+  max-width: 206px;
+  max-height: 80px;
+}
+.footer .contact-social__title {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer .contact-social__card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer .contact-social__card-link-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  border-radius: 50%;
+  color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.footer .contact-social__card-link-button {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }/*# sourceMappingURL=style.css.map */

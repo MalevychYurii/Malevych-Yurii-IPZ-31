@@ -117,6 +117,7 @@ section {
     position: relative;
     padding: 200px 0px;
     z-index: 0;
+    background: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(/src/images/background_solution.jpg);
 
     &__container {
         position: relative;
@@ -193,7 +194,22 @@ section {
         /* 171.429% */
         letter-spacing: 0.42px;
     }
+
+    &__phbox {
+        background: #F5F4FA;
+        display: inline-block;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        height: 120px;
+        padding: 25px 100px;
+    }
+
+    &__photo {
+        width: 70px;
+        height: 70px;
+    }
 }
+
 
 .what-we-do {
     @extend.container;
@@ -275,7 +291,78 @@ section {
         font-size: 16px;
         letter-spacing: 0.48px;
     }
+
+    &__card-link {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__card-link-picture {
+        width: 44px;
+        height: 44px;
+        transition: 300ms;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 12px 12px;
+        transition: color 0, 3s ease;
+        fill: #afb1b8;
+    }
+
+    .card-link-button {
+        width: 20px;
+        height: 20px;
+    }
+
 }
+
+.section-clients {
+    @extend.container;
+
+    &__clients {}
+
+    &__clients-title {
+        text-align: center;
+        font-size: 36px;
+        letter-spacing: 1.08px;
+        font-weight: 700;
+        word-wrap: break-word;
+        color: #212121;
+    }
+
+    &__clients-list {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__clients-list-item {
+        width: 170px;
+        height: 92px;
+    }
+
+    &__clients-action {
+        display: flex;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        fill: #AFB1B8;
+        transition: border-color 0.3s;
+    }
+
+    &__clients-svg {
+        width: 106px;
+        height: 60px;
+        transition: fill 0.3s ease;
+        position: relative;
+    }
+}
+
 
 .main {
 
@@ -469,5 +556,51 @@ section {
         }
 
         &__link {}
+    }
+
+
+    &__contact {}
+
+    .contact-social {
+        max-width: 206px;
+        max-height: 80px;
+
+        &__title {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &__card-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__card-team-link {}
+
+        &__card-link-picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background: #ffffff1a;
+            border-radius: 50%;
+            color: #fff;
+            transition: background 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        &__card-link-button {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
     }
 }
