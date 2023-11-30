@@ -73,25 +73,26 @@ section {
   gap: 60px;
 }
 
+.header-list .header-list__navsvg-icon {
+  transition: fill 300ms ease-in-out;
+  width: 16px;
+  height: 12px;
+}
 .header-list .header-list__link {
   color: #757575;
+  fill: #757575;
   transition: all 0.3s ease;
+  letter-spacing: 0.28px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-list .header-list__link:hover svg,
+.header-list .header-list__link :focus svg {
+  fill: #2196F3;
 }
 .header-list .header-list__link:hover,
 .header-list .header-list__link :focus {
   color: #2196F3;
-}
-.header-list__link {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  letter-spacing: 0.28px;
-  transition: all 0.3s ease;
-}
-.header-list__link:hover,
-.header-list__link :focus {
-  color: #2196F3;
-  font-size: 14px;
-  letter-spacing: 0.28px;
 }
 
 .solution-for-business {
@@ -252,6 +253,11 @@ section {
   transition: color 0, 3s ease;
   fill: #afb1b8;
 }
+.our-team__card-link-picture:hover, .our-team__card-link-picture:focus {
+  background-color: #2196F3;
+  border-radius: 50%;
+  fill: #fff;
+}
 .our-team .card-link-button {
   width: 20px;
   height: 20px;
@@ -286,6 +292,11 @@ section {
   height: 100%;
   fill: #AFB1B8;
   transition: border-color 0.3s;
+}
+.section-clients__clients-action:hover, .section-clients__clients-action:focus {
+  border-radius: 4px;
+  border: 1px solid #2196F3;
+  fill: #2196F3;
 }
 .section-clients__clients-svg {
   width: 106px;
@@ -414,10 +425,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-.footer .contact__header-list {
-  color: #757575;
-  font-style: normal;
-}
 .footer .list__link {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
@@ -465,16 +472,20 @@ section {
   gap: 10px;
 }
 .footer .contact-social__card-link-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1019607843);
+  transition: 300ms;
+  display: inline-block;
   border-radius: 50%;
-  color: #fff;
-  transition: background 0.3s ease, color 0.3s ease;
-  cursor: pointer;
+  padding: 12px 12px;
+  transition: color 0, 3s ease;
+  fill: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer .contact-social__card-link-picture:hover, .footer .contact-social__card-link-picture:focus {
+  background-color: #2196F3;
+  border-radius: 50%;
+  fill: #fff;
 }
 .footer .contact-social__card-link-button {
   width: 20px;
