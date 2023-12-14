@@ -31,7 +31,7 @@
         </nav>
         <ul class="contact__list header-list">
           <li class="header-list__item">
-            <a href="mailto:info@devstudio.com" class="header-list__link">
+            <a href="mailto:info@devstudio.com" class="header-list__left">
               <svg class="header-list__navsvg-icon">
                 <use xlink:href="sprite.svg#icon-15"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="header-list__item">
-            <a href="tel:+380961111111" class="header-list__link">
+            <a href="tel:+380961111111" class="header-list__right">
               <svg class="header-list__navsvg-icon">
                 <use xlink:href="sprite.svg#icon-16"></use>
               </svg>
@@ -56,7 +56,7 @@
           <h1 class="solution-for-business__title">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button class="solution-for-business__button" type="button">
+          <button class="solution-for-business__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -409,6 +409,16 @@
       </div>
     </footer>
   </div>
+  <div class="backdrop close-box" data-modal="" bis_skin_checked="1">
+    <div class="modal" bis_skin_checked="1">
+      <button class="btn_close" type="button" data-modal-close="">
+        <svg class="modal-icon">
+          <use xlink:href="sprite.svg#icon-17"> </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="../src/js/modal.js"></script>
 </body>
 
 </html>

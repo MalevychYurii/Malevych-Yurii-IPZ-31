@@ -64,6 +64,7 @@ section {
 
         &__link {
             color: #212121;
+            position: relative;
             font-size: 14px;
             font-weight: 500;
             letter-spacing: 0.28px;
@@ -77,6 +78,18 @@ section {
 
         .active {
             color: #2196F3;
+
+            &::after {
+                content: "";
+                background-color: #2196F3;
+                border-radius: 2px;
+                position: absolute;
+                height: 4px;
+                left: 0;
+                top: 45px;
+                bottom: 0px;
+                width: 100%;
+            }
         }
     }
 }
@@ -96,19 +109,48 @@ section {
 
     .header-list {
 
-        &__navsvg-icon {
-            transition: fill 300ms ease-in-out;
-            width: 16px;
-            height: 12px;
-        }
-
-        &__link {
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             color: #757575;
             fill: #757575;
             transition: all 0.3s ease;
             letter-spacing: 0.28px;
             font-size: 14px;
             font-weight: 500;
+
+            svg {
+                width: 16px;
+                height: 12px;
+            }
+
+            &:hover svg,
+            :focus svg {
+                fill: #2196F3;
+            }
+
+            &:hover,
+            :focus {
+                color: #2196F3;
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #757575;
+            fill: #757575;
+            transition: all 0.3s ease;
+            letter-spacing: 0.28px;
+            font-size: 14px;
+            font-weight: 500;
+
+            svg {
+                width: 10px;
+                height: 17px;
+            }
 
             &:hover svg,
             :focus svg {
@@ -130,7 +172,7 @@ section {
     position: relative;
     padding: 200px 0px;
     z-index: 0;
-    background: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../src/images/background_solution.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../asrc/images/background_solution.jpg);
 
     &__container {
         position: relative;
@@ -171,6 +213,7 @@ section {
         letter-spacing: 0.96px;
         margin: 0 auto;
         display: block;
+        cursor: pointer;
         padding: 10px 24px
     }
 }
@@ -303,6 +346,7 @@ section {
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 0.48px;
+        margin-bottom: 16px;
     }
 
     &__card-link {
@@ -494,8 +538,18 @@ section {
     }
 
     &__item {
+        display: inline-block;
         border: 1px solid #EEE;
         max-width: 370px;
+
+
+        &:hover,
+        &:focus {
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+            transform: translateY(0);
+        }
     }
 
     &__link {
@@ -519,6 +573,37 @@ section {
         line-height: 187.5%;
         letter-spacing: 0.48px;
         color: #757575;
+    }
+
+    &__effect {
+        transition: transform 250ms ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(101%);
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+
+        &:hover,
+        &:focus {
+            transform: translateY(0);
+        }
+
+        p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.54px;
+        }
+    }
+}
+
+.effect {
+
+    &_container {
+        position: relative;
+        overflow: hidden;
     }
 }
 
@@ -649,4 +734,54 @@ section {
         }
 
     }
+}
+
+.backdrop {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.20);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.close-box {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+    width: 528px;
+    height: 581px;
+}
+
+.btn_close {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    fill: #212121;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.modal-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
+    width: 18px;
+    height: 18px;
 }
