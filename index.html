@@ -31,7 +31,7 @@
         </nav>
         <ul class="contact__list header-list">
           <li class="header-list__item">
-            <a href="mailto:info@devstudio.com" class="header-list__link">
+            <a href="mailto:info@devstudio.com" class="header-list__left">
               <svg class="header-list__navsvg-icon">
                 <use xlink:href="sprite.svg#icon-15"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="header-list__item">
-            <a href="tel:+380961111111" class="header-list__link">
+            <a href="tel:+380961111111" class="header-list__right">
               <svg class="header-list__navsvg-icon">
                 <use xlink:href="sprite.svg#icon-16"></use>
               </svg>
@@ -56,7 +56,7 @@
           <h1 class="solution-for-business__title">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button class="solution-for-business__button" type="button">
+          <button class="solution-for-business__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -121,13 +121,25 @@
             <h2 class="what-we-do__title">Чим ми займаємося</h2>
             <ul class="what-we-do__lower-images">
               <li class="what-we-do__item">
-                <img src="./src/images/what_we_do/what_we_do1.jpg" alt="background_laptop_img" width="370" />
+                <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do1.jpg" alt="background_laptop_img"
+                  width="370" />
+                <div class="what-we-do__text" bis_skin_checked="1">
+                  ДЕСКТОПНІ ДОДАТКИ
+                </div>
               </li>
               <li class="what-we-do__item">
-                <img src="./src/images/what_we_do/what_we_do2.jpg" alt="background_phone_img" width="370" />
+                <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do2.jpg" alt="background_phone_img"
+                  width="370" />
+                <div class="what-we-do__text" bis_skin_checked="1">
+                  МОБІЛЬНІ ДОДАТКИ
+                </div>
               </li>
               <li class="what-we-do__item">
-                <img src="./src/images/what_we_do/what_we_do3.jpg" alt="background_tablet_img" width="370" />
+                <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do3.jpg" alt="background_tablet_img"
+                  width="370" />
+                <div class="what-we-do__text" bis_skin_checked="1">
+                  ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                </div>
               </li>
             </ul>
           </div>
@@ -409,6 +421,16 @@
       </div>
     </footer>
   </div>
+  <div class="backdrop close-box" data-modal="" bis_skin_checked="1">
+    <div class="modal" bis_skin_checked="1">
+      <button class="btn_close" type="button" data-modal-close="">
+        <svg class="modal-icon">
+          <use xlink:href="sprite.svg#icon-17"> </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./src/js/modal.js"></script>
 </body>
 
 </html>
