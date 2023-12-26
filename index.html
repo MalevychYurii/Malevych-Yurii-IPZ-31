@@ -124,21 +124,21 @@
                 <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do1.jpg" alt="background_laptop_img"
                   width="370" />
                 <div class="what-we-do__text" bis_skin_checked="1">
-                  ДЕСКТОПНІ ДОДАТКИ
+                  <p>ДЕСКТОПНІ ДОДАТКИ</p>
                 </div>
               </li>
               <li class="what-we-do__item">
                 <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do2.jpg" alt="background_phone_img"
                   width="370" />
                 <div class="what-we-do__text" bis_skin_checked="1">
-                  МОБІЛЬНІ ДОДАТКИ
+                  <p>МОБІЛЬНІ ДОДАТКИ</p>
                 </div>
               </li>
               <li class="what-we-do__item">
                 <img class="what-we-do__img" src="./src/images/what_we_do/what_we_do3.jpg" alt="background_tablet_img"
                   width="370" />
                 <div class="what-we-do__text" bis_skin_checked="1">
-                  ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                  <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                 </div>
               </li>
             </ul>
@@ -418,6 +418,18 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h3 class="footer-subscribe__title">Підпишіться на розсилку</h3>
+          <form class="footer-subscribe__wrapper">
+            <input class="wrapper-input" id="send" type="text" placeholder="E-mail" required>
+            <button class="wrapper__button" type="submit">
+              Підписатися
+              <svg class="wrapper__icon" width="24" height="24">
+                <use xlink:href="sprite.svg#icon-18"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
   </div>
@@ -425,9 +437,66 @@
     <div class="modal" bis_skin_checked="1">
       <button class="btn_close" type="button" data-modal-close="">
         <svg class="modal-icon">
-          <use xlink:href="sprite.svg#icon-17"> </use>
+          <use xlink:href="sprite.svg#icon-17"></use>
         </svg>
       </button>
+      <div class="modal__wrapper">
+        <form action="">
+          <h3 class="modal__wrapper-title">
+            Залиште свої дані, ми вам передзвонимо
+          </h3>
+          <ul class="modal__wrapper-list">
+            <li class="modal__wrapper-item">
+              <label class="modal__wrapper-subtitle" for="name">Ім'я</label>
+              <div class="modal__wrapper-container" bis_skin_checked="1">
+                <input class="wrapper-container__input" type="text" name="name" placeholder="Ім'я" id="name"
+                  required="">
+                <svg class="wrapper-container__icon" width="18" height="18">
+                  <use xlink:href="sprite.svg#icon-19"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal__wrapper-item">
+              <label class="modal__wrapper-subtitle" for="name">Телефон</label>
+              <div class="modal__wrapper-container" bis_skin_checked="1">
+                <input class="wrapper-container__input" type="text" name="name" placeholder="Телефон" id="name"
+                  required="">
+                <svg class="wrapper-container__icon" width="18" height="18">
+                  <use xlink:href="sprite.svg#icon-20"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="modal__wrapper-item">
+              <label class="modal__wrapper-subtitle">Пошта</label>
+              <div class="modal__wrapper-container" bis_skin_checked="1">
+                <input class="wrapper-container__input" type="text" name="name" placeholder="Пошта" id="name"
+                  required="">
+                <svg class="wrapper-container__icon" width="18" height="18">
+                  <use xlink:href="sprite.svg#icon-21"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <div bis_skin_checked="1">
+            <label class="modal__wrapper-subtitle">Комментар</label>
+            <textarea class="modal__wrapper-area" placeholder="Введіть текст" required=""></textarea>
+          </div>
+          <div class="modal__wrapper-checkbox">
+            <label class="wrapper-checkbox__label" required="">
+              <input class="wrapper-checkbox__check hidden" type="checkbox" required="">
+              <svg class="wrapper-checkbox__icon-checkbox" width="18" height="18">
+                <use xlink:href="sprite.svg#icon-22"></use>
+              </svg>
+              <p class="wrapper-checkbox__text">
+                Погоджуюся з розсилкою та приймаю
+                <a href="#" class="wrapper-checkbox__text-blue">Умови договору</a>
+              </p>
+              </input>
+            </label>
+          </div>
+          <button class="modal__wrapper-button" type="submit">Відправити</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./src/js/modal.js"></script>
