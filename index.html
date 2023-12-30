@@ -47,6 +47,49 @@
             </a>
           </li>
         </ul>
+
+        <button class="burger-button header__burger-button">
+          <span class="burger-button__item"></span>
+        </button>
+        <div class="header__menu menu-burger">
+          <nav class="menu-burger__body">
+            <ul class="menu-burger__list">
+              <li class="menu-burger__item">
+                <a href="./index.html" class="menu-burger__link">Студія</a>
+              </li>
+              <li class="menu-burger__item">
+                <a href="./portfolio.html" class="menu-burger__link">Портфоліо</a>
+              </li>
+              <li class="menu-burger__item">
+                <a href="#" class="menu-burger__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-burger__contact contact-2">
+            <ul class="contact-2">
+              <li class="contact-2__item">
+                <a href="#" class="contact-2__email">+38 096 111 11 11</a>
+              </li>
+              <li class="contact-2__item">
+                <a href="#" class="contact-2__tel">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="social-list-2">
+            <li class="social-list-2__item">
+              <a href="#" class="social-list-2__link">Instagram</a>
+            </li>
+            <li class="social-list-2__item">
+              <a href="#" class="social-list-2__link">Twitter</a>
+            </li>
+            <li class="social-list-2__item">
+              <a href="#" class="social-list-2__link">Facebook</a>
+            </li>
+            <li class="social-list-2__item">
+              <a href="#" class="social-list-2__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -227,7 +270,7 @@
                 </div>
               </li>
               <li class="our-team__item">
-                <img src="./src/images/our_team/our_team3.jpg" alt="Marketing" class="our-command__image" width="270" />
+                <img src="./src/images/our_team/our_team3.jpg" alt="Marketing" class="our-team__image" />
                 <div class="our_team__container">
                   <h3 class="our-team__name">Микола Тарасов</h3>
                   <p class="our-team__job">Marketing</p>
@@ -363,7 +406,7 @@
             <span class="blue-logo">Web</span><span class="white-logo">Studio</span>
           </a>
           <div class="footer__contact">
-            <address>
+            <address class="footer__address">
               <ul class="footer_contact__list list">
                 <li class="footer_list__item">
                   <p><a rel="nofollow" href="https://maps.app.goo.gl/WaeDtAUqTpNRBQB36" class="footer_list_disabled">м.
@@ -480,7 +523,7 @@
             <input class="modal-form__check hidden" id="customCheckbox" name="checkbox" type="checkbox" required>
             <label class="modal-form__label" for="customCheckbox" required>
               <svg class="modal-form__icon_checkbox" width="18" height="18">
-                <use href="./src/images/iconcheck.svg"></use>
+                <use xlink:href="sprite.svg#icon-23"></use>
               </svg>
               <p class="modal-form__text">Погоджуюся з розсилкою та приймаю <span class="modal-form__text_blue">Умови
                   договору</span></p>
@@ -492,6 +535,7 @@
     </div>
   </div>
   <script src="./src/js/modal.js"></script>
+  <script src="./src/js/menu.js"></script>
 </body>
 
 </html>
