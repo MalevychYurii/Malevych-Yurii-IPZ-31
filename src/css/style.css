@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
-.container, .filling, .section-clients, .what-we-do, .about-card, .header__container {
+.container, .section-clients, .what-we-do, .about-card, .header__container {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0 15px;
@@ -17,6 +17,9 @@ body {
 section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+section .container, section .section-clients, section .what-we-do, section .about-card, section .header__container {
+  padding: 0 0;
 }
 
 .header {
@@ -150,7 +153,8 @@ section {
 }
 @media (max-width: 720px) {
   .menu-burger {
-    display: block;
+    display: hidden;
+    height: 900px;
   }
 }
 .menu-burger_open {
@@ -250,6 +254,15 @@ section {
   gap: 60px;
 }
 
+@media (min-width: 721px) and (max-width: 900px) {
+  .header-list {
+    display: flex;
+    margin-left: auto;
+    flex-wrap: wrap;
+    gap: 0px;
+    max-width: 160px;
+  }
+}
 .header-list .header-list__left {
   display: flex;
   align-items: center;
@@ -375,6 +388,17 @@ section {
   gap: 30px;
   width: 100%;
 }
+@media (min-width: 765px) {
+  .about-card {
+    width: 738px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+}
 @media (max-width: 765px) {
   .about-card {
     width: 100%;
@@ -385,6 +409,11 @@ section {
 .about-card__item {
   width: 100%;
 }
+@media (min-width: 765px) {
+  .about-card__item {
+    width: 354px;
+  }
+}
 .about-card__title {
   color: #212121;
   font-size: 14px;
@@ -394,6 +423,12 @@ section {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 765px) {
+  .about-card__title {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .about-card__subtitle {
   color: #757575;
@@ -499,7 +534,7 @@ section {
   /* material shadow v1 */
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .our-team__item {
     margin: 0 auto;
   }
@@ -507,6 +542,12 @@ section {
 @media (max-width: 767px) {
   .our-team__image {
     width: 450px;
+  }
+}
+@media (min-width: 765px) {
+  .our-team__image {
+    width: 354px;
+    height: 374px;
   }
 }
 .our-team__name {
@@ -660,6 +701,9 @@ section {
   gap: 8px;
   margin-bottom: 50px;
 }
+.main_filter {
+  padding: 0 0;
+}
 .main__button {
   padding: 6px 22px 6px 22px;
   font-size: 16px;
@@ -695,7 +739,12 @@ section {
   border: 1px solid #EEE;
   max-width: 370px;
 }
-@media (max-width: 760px) and (min-width: 320px) {
+@media (max-width: 1200px) and (min-width: 320px) {
+  .filling__item {
+    width: 354px;
+  }
+}
+@media (max-width: 765px) and (min-width: 320px) {
   .filling__item {
     width: 100%;
     max-width: 450px;
@@ -752,13 +801,13 @@ section {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 760px) and (min-width: 320px) {
+@media (max-width: 765px) and (min-width: 320px) {
   .effect_container {
     width: 450px;
     max-width: 450px;
   }
 }
-@media (max-width: 760px) and (min-width: 320px) {
+@media (max-width: 765px) and (min-width: 320px) {
   .effect_container img {
     width: 100%;
     max-width: 450px;
@@ -767,8 +816,9 @@ section {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
 }
 .footer .footer_contact__list {
   display: flex;
@@ -778,16 +828,27 @@ section {
 }
 .footer__container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+@media (min-width: 1201px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .footer__box {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (min-width: 1201px) {
+  .footer__box {
+    align-items: flex-start;
+  }
 }
 @media (max-width: 1200px) {
   .footer__box {
@@ -801,6 +862,11 @@ section {
 .footer .contact {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1201px) {
+  .footer .list {
+    align-items: flex-start;
+  }
 }
 .footer .list__link {
   color: rgba(255, 255, 255, 0.6);
@@ -903,7 +969,7 @@ section {
   width: 100%;
 }
 .footer .footer-subscribe__wrapper input {
-  width: 450px;
+  max-width: 450px;
 }
 @media (max-width: 1200px) {
   .footer .footer-subscribe__wrapper {
