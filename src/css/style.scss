@@ -35,7 +35,8 @@ section {
         align-items: center;
 
         @media (max-width: 720px) {
-            justify-content: space-between;
+            justify-content: space-around;
+            padding-left: 25px;
         }
     }
 
@@ -302,12 +303,13 @@ section {
     }
 
     @media (max-width: 1200px) {
-        max-width: 160px;
+        max-width: 200px;
     }
 
     &__list {
         display: flex;
         margin-left: auto;
+        margin-right: auto;
         gap: 60px;
     }
 }
@@ -468,7 +470,7 @@ section {
     gap: 30px;
     width: 100%;
 
-    @media (min-width: 765px) {
+    @media (min-width: 765px) and (max-width: 1200px) {
         width: 738px;
         padding: 0;
         display: flex;
@@ -643,7 +645,7 @@ section {
             width: 450px;
         }
 
-        @media (min-width: 765px) {
+        @media (min-width: 765px) and (max-width: 1024px) {
             width: 354px;
             height: 374px;
         }
@@ -1180,6 +1182,12 @@ section {
 
             @media (max-width: 1200px) {
                 flex-direction: column;
+            }
+
+            @media (min-width: 319px) and (max-width: 360px) {
+                input {
+                    max-width: 300px;
+                }
             }
         }
     }
